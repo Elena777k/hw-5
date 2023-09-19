@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor User
+participant Recursive
+
+User -> Dynamic: dynamicMethod(n: int)
+activate Dynamic
+Dynamic --> User: int
+deactivate Dynamic
+deactivate User
+
+
+@enduml

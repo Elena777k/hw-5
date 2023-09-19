@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor User
+participant Recursive
+User -> Recursive: recursiveMethod(n)
+activate Recursive
+Recursive --> User: int
+deactivate Recursive
+deactivate User
+@enduml

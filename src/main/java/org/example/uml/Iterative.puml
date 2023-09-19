@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor User
+participant Iterative
+User -> Iterative: iterativeMethod(n)
+activate Iterative
+Iterative --> User: int
+deactivate Iterative
+deactivate User
+@enduml
